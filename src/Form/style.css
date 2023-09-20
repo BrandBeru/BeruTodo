@@ -1,56 +1,57 @@
 form {
-    width: 90%;
-    max-width: 300px;
-    background-color: #fff;
-    padding: 33px 40px;
+    width: 100%;
+    height: 100%;
+    max-height: 200px;
+    max-width: 350px;
+    background-color: #dee8ee;
+    padding: 20px 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    border-radius: 25px;
 }
 
-label {
-    text-align: center;
+.form-title {
+    text-align: left;
+    width: 100%;
     font-weight: bold;
-    font-size: 20px;
-    color: #1E1E1F;
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    color: #313135;
     margin-bottom: 26px;
 }
 
-textarea {
-    background-color: #F9FBFC;
-    border: 2px solid #202329;
-    border-radius: 2px;
-    box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
-    color: #1E1E1F;
-    font-size: 20px;
-    text-align: center;
-    padding: 12px;
-    height: 96px;
-    width: calc(100% - 25px);
+input {
+    background-color: transparent;
+    color: #27272c;
+    font-size: 18px;
+    text-align: left;
+    width: 80%;
+
+    border: 0px solid transparent;
+    border-bottom: 2px solid #3b5d8a;
+
+    transition-duration: .5s;
 }
 
-textarea::placeholder {
-    color: #A5A5A5;
-    font-family: 'Montserrat';
-    font-weight: 400;
-}
-
-textarea:focus {
-    outline-color: #61DAFA;
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #5985be;
 }
 
 button {
     cursor: pointer;
     display: inline-block;
     font-size: 20px;
-    color: #202329;
-    font-weight: 400;
+    color: #e2e6ec;
     width: 120px;
-    height: 48px;
-    border-radius: 2px;
+    height: 32px;
+    border-radius: 20px;
     border: none;
-    font-family: 'Montserrat';
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .button-container {
@@ -59,15 +60,35 @@ button {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-
 }
 
-.cancel-button {
-    background: transparent;
+.cancel-btn {
+    align-self: flex-end;
+    background-color: #c73f3f;
+    box-shadow: 0px 5px 25px #c73f3f;
 
+    width: 32px;
+    height: 32px;
+    
+    transition-duration: .5s;
+
+    margin-top: 40px;
+}
+.cancel-btn:hover{
+    background-color: #eb5d5d;
 }
 
-.create-button {
-    background: #61DAFA;
-    box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+.create-btn {
+    margin-left: 15px;
+    background-color: #264d80;
+    transition-duration: .5s;
+    box-shadow: 0px 5px 25px #264d80;
+}
+.create-btn:hover{
+    color: #27272c;
+    background-color: #427ece;
+}
+
+@media only screen and (max-width: 850px) {
+    
 }

@@ -9,6 +9,7 @@ import { Loading } from '../Loading/';
 import { Error } from '../components/Error';
 import { Empty } from '../components/Empty';
 import { Modal } from '../Modal';
+import { Title } from '../Title';
 
 import { TodoContext } from '../TodoContext';
 import { Form } from '../Form';
@@ -24,7 +25,7 @@ function AppUI() {
     } = React.useContext(TodoContext)
     return (
         <>
-            <Counter />
+            <Title />
             <Search />
 
             <TodoList>
@@ -52,6 +53,8 @@ function AppUI() {
                 </Modal>
             )
             }
+
+            <span className='about'>By <a href='http://brandberu.tech'>Giovanny Bernal</a> </span>
 
         </>
     )

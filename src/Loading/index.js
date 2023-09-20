@@ -1,13 +1,14 @@
-import './style.css'
+import "../css/App.css"
+import "./style.css"
 
 function Loading() {
     return (
-        <div className='container'>
-            <span className="complete"></span>
-            <p className="text"></p>
-            <span className="close"></span>
-        </div>
+        <li className="loading-item">
+            <span></span>
+            <p ></p>
+            <span></span>
+        </li>
     )
 }
 
-export {Loading}
+export { Loading }

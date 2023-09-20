@@ -2,6 +2,7 @@ import React from "react"
 
 import "./style.css"
 import { TodoContext } from "../TodoContext"
+import {GrFormClose} from 'react-icons/gr'
 
 function Form(){
     const {addTodo, setOpenModal} = React.useContext(TodoContext)
@@ -19,12 +20,12 @@ function Form(){
     }
     return (
         <form className="form" onSubmit={onSubmit}>
-            <label>Escribe tu nuevo TODO</label>
-            <textarea placeholder="Texto del nuevo TODO" onChange={onChange} value={name} />
+            <span className="form-title">Nombre de tarea</span>
             <div className="button-container">
-                <button className="cancel-btn" type="button" onClick={onCancel}>Cancelar</button>
-                <button className="create-btn" type="submit">Añadir</button>
+                <input onChange={onChange} value={name} />
+                <button className="create-btn" type="submit">Hecho</button>
             </div>
+            <button className="cancel-btn" type="button" onClick={onCancel}> <GrFormClose /> </button>
         </form>
     )
 }
