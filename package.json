@@ -32,7 +32,7 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://brandberu.github.io/BeruTodo",
+  "homepage": "https://todo.brandberu.tech",
   "devDependencies": {
     "gh-pages": "^6.0.0"
   }

@@ -192,3 +192,14 @@ li {
 a{
   color: #1c4375;
 }
+
+@media only screen and (max-width: 800px) {
+  .Icon-delete {
+    margin-top: 3px;
+    position: absolute;
+    right: 10px;
+  }
+  li {
+    width: 100%;
+  }
+}
